@@ -8,13 +8,13 @@ namespace Week_3_Day_3_Polymorphism
 {
     class Vehicle
     {
-        private int seats;
-        private int carryingCapacity;
-        private string color;
-        private double movementSpeed;
+        protected int seats;
+        protected int carryingCapacity;
+        protected string color;
+        protected double movementSpeed;
         private float gearRatio;
         private float engineSize;
-        private double distanceTraveled;
+        protected double distanceTraveled;
 
         public int Seats
         {
