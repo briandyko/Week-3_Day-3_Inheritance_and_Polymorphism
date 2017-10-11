@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Week_3_Day_3_Polymorphism
 {
-    class Vehicle
+    abstract class Vehicle
     {
         protected int seats;
         protected int carryingCapacity;
@@ -50,8 +50,8 @@ namespace Week_3_Day_3_Polymorphism
             this.movementSpeed = movementSpeed;
             this.distanceTraveled = 0.0d;   //not set as a parameter, hardcoded to zero.
         }
-
-        public void Move()
+    
+        public virtual void Move()
         {
             //distanceTraveled = distancTraveled + movementSpeed;
             distanceTraveled += movementSpeed;

@@ -21,5 +21,10 @@ namespace Week_3_Day_3_Polymorphism
         }
 
 
+        public override void Move()
+        {
+            distanceTraveled += movementSpeed * waterDrag;
+        }
+
     }
 }
