@@ -27,5 +27,10 @@ namespace Week_3_Day_3_Polymorphism
             base.Move(); // this already moves the vehicle forward, and given that aircrafts move forward too, it's still applicable - no need to rewrite it.
             // altitude could also be down here, the order doesn't matter, each way completely valid
         }
+
+        public override string GetDistanceTraveled()
+        {
+            return "Altitude: " + altitude + " - " + base.GetDistanceTraveled();
+        }
     }
 }
