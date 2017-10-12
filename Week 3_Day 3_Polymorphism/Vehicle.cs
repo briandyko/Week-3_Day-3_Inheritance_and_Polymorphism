@@ -57,6 +57,13 @@ namespace Week_3_Day_3_Polymorphism
             distanceTraveled += movementSpeed;
         }
 
+        public virtual string GetDistanceTraveled()
+        {
+
+        }
+
+       // public abstract void StartEngine();  // abstract forces every child class of vehicle should have a StartEngine() method
+
 
     }
 }

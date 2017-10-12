@@ -11,11 +11,11 @@ namespace Week_3_Day_3_Polymorphism
         static void Main(string[] args)
         {
 
-            Vehicle baseVehicle = new Vehicle(4, 2000, "Green", 55.0d);
+            //Vehicle baseVehicle = new Vehicle(4, 2000, "Green", 55.0d);
 
-            baseVehicle.Move();
-            baseVehicle.Move();
-            Console.WriteLine(baseVehicle.DistanceTraveled);
+            //baseVehicle.Move();
+            //baseVehicle.Move();
+           //Console.WriteLine(baseVehicle.DistanceTraveled);
 
             Automobile herbie = new Automobile(4, 13, 2, 4, 1500, "White", 88.0d);
             herbie.Move();
@@ -26,6 +26,12 @@ namespace Week_3_Day_3_Polymorphism
             boaty.Move();
             boaty.Move();
             Console.WriteLine("Boat Distance Traveled: " + boaty.DistanceTraveled);
+
+            Aircraft aircraft1 = new Aircraft(70, 100000, "Grey", 600.0d);
+            aircraft1.Move();
+            aircraft1.Move();
+            Console.WriteLine("Aircraft Distance Traveled: " + aircraft1.DistanceTraveled);
+
 
 
 
